@@ -1,6 +1,6 @@
-Movabale box generator...
+Movable box generator...
 
-This the flytbase assignment so far:-
+This the flytbase assignment using ReactJS Framework so far:-
 
 I provided a box which can be moved in given any direction by pressing following keys :-
 
