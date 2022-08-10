@@ -8,13 +8,9 @@ export default function App() {
 
   const move = useCallback((direction) => {
     switch (direction) {
-      // adding logic here to prevent div from leaving the area.
-      // reddit comment
+
       case "up":
         setTop((top) => (top - pixelDistance >= 0 ? top - pixelDistance : 0));
-        // for (let i = 0; i < 50; i += 1) {
-        //   setTop(top - 1);
-        // }
         break;
       case "down":
         setTop((top) =>
@@ -69,8 +65,6 @@ export default function App() {
 
   const onKeyDown = useCallback(
     (e) => {
-      // This should now use e.key because e.keyCode is depreciated
-      // it was originall e key code (reddit comment)
       switch (e.key) {
         case "ArrowUp":
           move("up");
